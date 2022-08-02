@@ -53,7 +53,7 @@ function App() {
       <div>
         <h1>Totally Money Code Test</h1>
         <form onSubmit={handleSubmit}>
-          <div>
+          <div className="formItem">
             <label>Name</label>
             <input
               type="text"
@@ -62,7 +62,7 @@ function App() {
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div>
+          <div className="formItem">
             <label>D.O.B</label>
             <input
               type="date"
@@ -71,7 +71,7 @@ function App() {
               onChange={(e) => setBday(e.target.value)}
             />
           </div>
-          <div>
+          <div className="formItem">
             <label>Employment Status</label>
             <select
               required
@@ -84,7 +84,7 @@ function App() {
               <option value="Unemployed">Unemployed</option>
             </select>
           </div>
-          <div>
+          <div className="formItem">
             <label>Income</label>
             <input
               type="number"
@@ -93,7 +93,7 @@ function App() {
               onChange={(e) => setIncome(e.target.value)}
             />
           </div>
-          <div>
+          <div className="formItem">
             <label>House Number</label>
             <input
               type="number"
@@ -102,7 +102,7 @@ function App() {
               onChange={(e) => setHouseNum(e.target.value)}
             />
           </div>
-          <div>
+          <div className="formItem">
             <label>Postcode</label>
             <input
               type="text"
@@ -111,7 +111,11 @@ function App() {
               onChange={(e) => setPC(e.target.value)}
             />
           </div>
-          <button>Submit</button>
+          <div className="btn_container">
+            <button id="pushable2">
+              <span id="front2">Submit</span>
+            </button>
+          </div>
         </form>
         <Cards newUser={newUser} />
       </div>
