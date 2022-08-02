@@ -15,37 +15,6 @@ function App() {
   const handleSubmit = (e, newUser) => {
     e.preventDefault();
     setNewUser({ name, bday, employed, income, houseNum, pc });
-
-    // if (employed === "Student") {
-    //   return (
-    //     <div>
-    //       <div>Student Card</div>
-    //       {/* <div>Anywhere Card</div> */}
-    //     </div>
-    //   );
-    // }
-    // if (income >= 16000) {
-    //   return (
-    //     <div>
-    //       <div>Liquid Card</div>
-    //       {/* <div>Anywhere Card</div> */}
-    //     </div>
-    //   );
-    // }
-    // if (income >= 1) {
-    //   return <div>Anywhere Card</div>;
-    // }
-    // switch ({ name, bday, employed, income, houseNum, pc }) {
-    //   case employed === "Student":
-    //     console.log("Student Card");
-    //     break;
-    //   case income > 16000:
-    //     console.log("Liquid Card");
-    //     break;
-    //   default:
-    //     console.log("Anywhere Card");
-    //     break;
-    // }
   };
 
   return (
