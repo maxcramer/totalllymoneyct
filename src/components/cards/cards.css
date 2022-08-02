@@ -17,3 +17,9 @@
   font-weight: bold;
   margin-left: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 17rem;
+  }
+}
