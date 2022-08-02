@@ -1,38 +1,50 @@
 import "./App.css";
-
+import { useState } from "react";
 function App() {
+  const [userDetails, setUserDetails] = useState({});
+
+  const handleSubmit = (e) => {
+    setUserDetails({ value: e.target.value });
+  };
+
+  console.log(userDetails);
   return (
     <div className="App">
-      <body>
+      <div>
         <h1>Totally Money Code Test</h1>
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <div>
             <label>Name</label>
-            <input type="text" />
+            <input type="text" required />
           </div>
           <div>
             <label>D.O.B</label>
-            <input type="date" />
+            <input type="date" required />
           </div>
           <div>
             <label>Employment Status</label>
-            <input type="text" />
+            <select required>
+              <option value="Full Time">Full Time</option>
+              <option value="Part Time">Part Time</option>
+              <option value="Student">Student</option>
+              <option value="Unemployed">Unemployed</option>
+            </select>
           </div>
           <div>
             <label>Income</label>
-            <input type="number" />
+            <input type="number" required />
           </div>
           <div>
             <label>House Number</label>
-            <input type="number" />
+            <input type="number" required />
           </div>
           <div>
             <label>Postcode</label>
-            <input type="text" />
+            <input type="text" required />
           </div>
           <button type="submit">Submit</button>
         </form>
-      </body>
+      </div>
     </div>
   );
 }
