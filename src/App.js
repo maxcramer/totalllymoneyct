@@ -6,15 +6,46 @@ import Cards from "./components/cards/cards";
 function App() {
   const [name, setName] = useState("");
   const [bday, setBday] = useState("");
-  const [employed, setEmployed] = useState("Full Time");
+  const [employed, setEmployed] = useState("");
   const [income, setIncome] = useState("");
   const [houseNum, setHouseNum] = useState("");
   const [pc, setPC] = useState("");
   const [newUser, setNewUser] = useState({});
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, newUser) => {
     e.preventDefault();
     setNewUser({ name, bday, employed, income, houseNum, pc });
+
+    // if (employed === "Student") {
+    //   return (
+    //     <div>
+    //       <div>Student Card</div>
+    //       {/* <div>Anywhere Card</div> */}
+    //     </div>
+    //   );
+    // }
+    // if (income >= 16000) {
+    //   return (
+    //     <div>
+    //       <div>Liquid Card</div>
+    //       {/* <div>Anywhere Card</div> */}
+    //     </div>
+    //   );
+    // }
+    // if (income >= 1) {
+    //   return <div>Anywhere Card</div>;
+    // }
+    // switch ({ name, bday, employed, income, houseNum, pc }) {
+    //   case employed === "Student":
+    //     console.log("Student Card");
+    //     break;
+    //   case income > 16000:
+    //     console.log("Liquid Card");
+    //     break;
+    //   default:
+    //     console.log("Anywhere Card");
+    //     break;
+    // }
   };
 
   return (
@@ -80,16 +111,10 @@ function App() {
               onChange={(e) => setPC(e.target.value)}
             />
           </div>
-          <button type="submit">Submit</button>
+          <button>Submit</button>
         </form>
         <Cards newUser={newUser} />
       </div>
-      {/* <p>{name}</p>
-      <p>{bday}</p>
-      <p>{employed}</p>
-      <p>{income}</p>
-      <p>{houseNum}</p>
-      <p>{pc}</p> */}
     </div>
   );
 }
