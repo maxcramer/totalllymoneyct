@@ -1,5 +1,8 @@
 import "./App.css";
 import { useState } from "react";
+
+import Cards from "./components/cards/cards";
+
 function App() {
   const [name, setName] = useState("");
   const [bday, setBday] = useState("");
@@ -7,11 +10,11 @@ function App() {
   const [income, setIncome] = useState("");
   const [houseNum, setHouseNum] = useState("");
   const [pc, setPC] = useState("");
+  const [newUser, setNewUser] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newUser = { name, bday, employed, income, houseNum, pc };
-    console.log(newUser);
+    setNewUser({ name, bday, employed, income, houseNum, pc });
   };
 
   return (
@@ -79,13 +82,14 @@ function App() {
           </div>
           <button type="submit">Submit</button>
         </form>
+        <Cards newUser={newUser} />
       </div>
-      <p>{name}</p>
+      {/* <p>{name}</p>
       <p>{bday}</p>
       <p>{employed}</p>
       <p>{income}</p>
       <p>{houseNum}</p>
-      <p>{pc}</p>
+      <p>{pc}</p> */}
     </div>
   );
 }
