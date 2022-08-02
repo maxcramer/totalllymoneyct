@@ -22,16 +22,16 @@ const cards = ({ newUser: { name, bday, employed, income, houseNum, pc } }) => {
         </div>
         <div className="card">
           <h1>Anywhere Card</h1>
-          <p>APR: 18.9%</p>
+          <p>APR: 33.9%</p>
           <div className="balance">
             <p>Balance Transfer Offer Duration: </p>
             <p className="bold"> 0 months</p>
           </div>
           <div className="balance">
-            <p>Purchase Offer Duration: </p> <p className="bold"> 6 months</p>
+            <p>Purchase Offer Duration: </p> <p className="bold"> 0 months</p>
           </div>
           <div className="balance">
-            <p>Credit Available: </p> <p className="bold"> £1200</p>
+            <p>Credit Available: </p> <p className="bold"> £300</p>
           </div>
         </div>
       </div>
@@ -40,19 +40,32 @@ const cards = ({ newUser: { name, bday, employed, income, houseNum, pc } }) => {
   if (income >= 16000) {
     return (
       <div>
-        <div>Liquid Card</div>
         <div className="card">
-          <h1>Anywhere Card</h1>
-          <p>APR: 18.9%</p>
+          <h1>Liquid Card</h1>
+          <p>APR: 33.9%</p>
           <div className="balance">
             <p>Balance Transfer Offer Duration: </p>
-            <p className="bold"> 0 months</p>
+            <p className="bold"> 12 months</p>
           </div>
           <div className="balance">
             <p>Purchase Offer Duration: </p> <p className="bold"> 6 months</p>
           </div>
           <div className="balance">
-            <p>Credit Available: </p> <p className="bold"> £1200</p>
+            <p>Credit Available: </p> <p className="bold"> £3000</p>
+          </div>
+        </div>
+        <div className="card">
+          <h1>Anywhere Card</h1>
+          <p>APR: 33.9%</p>
+          <div className="balance">
+            <p>Balance Transfer Offer Duration: </p>
+            <p className="bold"> 0 months</p>
+          </div>
+          <div className="balance">
+            <p>Purchase Offer Duration: </p> <p className="bold"> 0 months</p>
+          </div>
+          <div className="balance">
+            <p>Credit Available: </p> <p className="bold"> £300</p>
           </div>
         </div>
       </div>
@@ -63,16 +76,16 @@ const cards = ({ newUser: { name, bday, employed, income, houseNum, pc } }) => {
       <div>
         <div className="card">
           <h1>Anywhere Card</h1>
-          <p>APR: 18.9%</p>
+          <p>APR: 33.9%</p>
           <div className="balance">
             <p>Balance Transfer Offer Duration: </p>
             <p className="bold"> 0 months</p>
           </div>
           <div className="balance">
-            <p>Purchase Offer Duration: </p> <p className="bold"> 6 months</p>
+            <p>Purchase Offer Duration: </p> <p className="bold"> 0 months</p>
           </div>
           <div className="balance">
-            <p>Credit Available: </p> <p className="bold"> £1200</p>
+            <p>Credit Available: </p> <p className="bold"> £300</p>
           </div>
         </div>
       </div>
@@ -80,7 +93,7 @@ const cards = ({ newUser: { name, bday, employed, income, houseNum, pc } }) => {
 
   return (
     <div>
-      <h1>Avaliable Cards</h1>
+      <h1>Please Fill in the Form above to see the available Cards</h1>
     </div>
   );
 };
