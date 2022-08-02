@@ -34,6 +34,7 @@ const cards = ({ newUser: { name, bday, employed, income, houseNum, pc } }) => {
             <p>Credit Available: </p> <p className="bold"> £300</p>
           </div>
         </div>
+        <h3>Total Credit: £1500</h3>
       </div>
     );
   }
@@ -68,6 +69,7 @@ const cards = ({ newUser: { name, bday, employed, income, houseNum, pc } }) => {
             <p>Credit Available: </p> <p className="bold"> £300</p>
           </div>
         </div>
+        <h3>Total Credit: £3300</h3>
       </div>
     );
   }
@@ -88,14 +90,9 @@ const cards = ({ newUser: { name, bday, employed, income, houseNum, pc } }) => {
             <p>Credit Available: </p> <p className="bold"> £300</p>
           </div>
         </div>
+        <h3>Total Credit: £300</h3>
       </div>
     );
-
-  return (
-    <div>
-      <h1>Please Fill in the Form above to see the available Cards</h1>
-    </div>
-  );
 };
 
 export default cards;
