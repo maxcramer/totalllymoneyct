@@ -8,9 +8,11 @@ function App() {
   const [houseNum, setHouseNum] = useState("");
   const [pc, setPC] = useState("");
 
-  const handleSubmit = (e) => {};
-
-  console.log(name);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newUser = { name, bday, employed, income, houseNum, pc };
+    console.log(newUser);
+  };
 
   return (
     <div className="App">
